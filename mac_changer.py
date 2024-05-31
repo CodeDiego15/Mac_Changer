@@ -4,6 +4,7 @@ import subprocess
 from argparse import ArgumentParser  # Use argparse instead of optparse
 from colorama import Fore 
 import re
+__version__ = "0.1.0"
 
 def print_banner():
     """Prints the MACMorph banner using colorama."""
@@ -36,7 +37,7 @@ parser.add_argument("-i", "--interface", dest="interface", required=True,
                     help="Network interface to change its MAC address")
 parser.add_argument("-m", "--mac", dest="new_mac", required=True,
                     help="New MAC address to set")
-
+parser.add_argument("-v", "--version", action="version", version=f"MACMorph {__version__}") 
 # Parse arguments
 args = parser.parse_args()
 
@@ -64,3 +65,6 @@ if mac_address:
     print(Fore.LIGHTGREEN_EX + f"[+] MAC address {mac_address.group(0)} changed successfully")
 else:
     print(Fore.LIGHTRED_EX + "[-] MAC address not changed")
+    
+    
+    
