@@ -4,6 +4,7 @@ import subprocess
 from argparse import ArgumentParser  # Use argparse instead of optparse
 from colorama import Fore 
 import re
+
 def print_banner():
     """Prints the MACMorph banner using colorama."""
     # Import colorama within the function
