@@ -19,6 +19,7 @@ sudo python3 mac_changer.py --help. view commands
 | :-------- | :------- | :------------------------- |
 | ` --interface` | `-i` | **Required**. use the desired interface. EX: enth0, en0|
 | `--mac` | `-m` | **Required**. use the mac that seems best to you. EX: 00:11:22:33:44:77
+| `--help`| `-h` | Help
 
 ### How to see your mac address?
 ```
